@@ -1,0 +1,505 @@
+/* RESET*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    margin-left: 60px;
+    margin-right: 60px;
+    background-image: linear-gradient(to bottom, #0388cb, rgb(190, 190, 61) );
+
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    margin-top: 10px;
+}
+
+header nav ul{
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    margin-top: 20px;
+    height: 60px;
+    text-decoration: none;
+
+
+}
+
+nav ul li{
+    display: inline;
+    padding: 5px;
+    align-items: center;
+    background-color: #fbbc5f;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 3px 3px black;
+    border-radius: 6%;
+    text-decoration: none;
+
+}
+
+
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+.link { color: black; } 
+.link:hover { color: whitesmoke; }
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-size: 1.7em;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.h2home{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+}
+
+
+
+.diferente{
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.dif2{
+    height: 150px;
+    width: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.dif2 h4{
+    margin-bottom: 10px;
+}
+
+.newsletter{
+    margin-top: 300px;
+    margin-left: 1em;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 0.3fr 0.4fr 1fr;
+
+    grid-template-areas: 
+                        "suscribite" 
+                        "form"
+                        "imgNews";
+
+    justify-content: center;
+    justify-items: center;
+}
+
+
+.suscribite{
+    grid-area: suscribite;
+    font-size: 1.7em;
+}
+
+.form{
+    grid-area: form;
+    display: flex;
+    justify-items:center;
+    align-items: center;
+}
+
+.form input{
+    display: inline;
+}
+
+
+.imgNews{
+    grid-area: imgNews;
+}
+
+.mail{
+    padding-top: 1.7em;
+    padding-bottom: 2em;
+    padding-right: 14em;
+    font-weight: bold;
+    box-shadow: 3px 3px black;
+    border-radius: 6%;
+    text-decoration: none
+    
+}
+
+.btnSuscribite{
+    background-color: #fbbc5f;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 3px 3px black;
+    border-radius: 6%;
+    text-decoration: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+}
+
+
+
+footer{
+    height: 3em;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    text-align: center;
+
+}
+
+/* Nosotros */
+
+
+
+.historia{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: "titleNos"
+                         "p-h"
+                         "p-h2" 
+                         "img-h";      
+    
+    row-gap: 40px;
+    justify-content: center;
+    
+}
+
+.titleNos{
+    grid-area: titleNos;
+    justify-self: center;
+
+}
+
+.p-h{
+    grid-area:p-h;
+    justify-self: center;
+    margin-right: 1em;
+    margin-left: 1em;
+
+}
+
+.p-h2{
+    grid-area:p-h2;
+    justify-self: center;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.img-h{
+    grid-area:img-h;
+    justify-self: center;
+}
+
+
+
+.pizzero{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: "titleNos2"
+                         "p-p"
+                         "p-p2" 
+                         "img-p";      
+    
+    row-gap: 40px;
+    justify-content: center;
+    
+}
+
+.titleNos2{
+    grid-area: titleNos2;
+    justify-self: center;
+}
+
+.p-p{
+    grid-area: p-p;
+    justify-self: center;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.p-p2{
+    grid-area: p-p2;
+    justify-self: center;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.img-p{
+    grid-area: img-p;
+    justify-self: center;
+
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: "titleNos3"
+                         "gal1"
+                         "gal2" 
+                         "gal3";      
+    
+    row-gap: 50px;
+    justify-content: center;
+}
+
+.titleNos3{
+    grid-area: titleNos3;
+    justify-self: center;
+}
+
+.gal1{
+    grid-area: img-p;
+    justify-self: center;
+    margin-top: 1em;
+
+}
+.gal2{
+    grid-area: img-p;
+    justify-self: center;
+    margin-top: 1em;
+
+
+}
+.gal3{
+    grid-area: img-p;
+    justify-self: center;
+    margin-top: 1em;
+
+
+}
+
+/* Contacto */
+
+.contacto{
+    padding-bottom: 200px;
+}
+
+
+.video{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media  screen and (min-width:600px) {
+    .newsletter{
+        margin-top: 300px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 0.2fr 0.5fr 1fr;
+        
+    
+        grid-template-areas: 
+                            "suscribite" 
+                            "form"
+                            "imgNews";
+                            
+    
+        
+    }
+
+    .suscribite{
+        grid-area: suscribite;
+        font-size: 2em;
+    }
+    
+  
+    .form{
+        grid-area: form;
+        
+    }
+    
+   
+    
+    
+    
+    .imgNews{
+        grid-area: imgNews;
+    }
+
+    .mail{
+        padding-top: 1.7em;
+        padding-bottom: 2em;
+        padding-right: 15em;
+        font-weight: bold;
+        box-shadow: 3px 3px black;
+        border-radius: 6%;
+        text-decoration: none
+        
+    }
+    
+    .btnSuscribite{
+        background-color: #fbbc5f;
+        font-size: 20px;
+        font-weight: bold;
+        box-shadow: 3px 3px black;
+        border-radius: 6%;
+        text-decoration: none;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: 5px;
+    }
+    
+}
+
+@media  screen and (min-width:720px) {
+    .newsletter{
+        margin-top: 200px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr;
+        
+    
+        grid-template-areas: 
+                            "suscribite imgNews" 
+                            "form form";
+                           
+                            
+    column-gap: 0.9em;
+        
+    }
+
+
+    .suscribite{
+        grid-area: suscribite;
+        font-size: 2em;
+    }
+    
+    .form{
+        grid-area: form;
+        
+    }
+    
+    
+    
+    .imgNewsClass{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .imgNews{
+        grid-area: imgNews;
+        height: 350px;
+        width: 350px;
+    }
+
+    .mail{
+        padding-top: 1.7em;
+        padding-bottom: 2em;
+        padding-right: 24em;
+        font-weight: bold;
+        box-shadow: 3px 3px black;
+        border-radius: 6%;
+        text-decoration: none
+        
+    }
+    
+    .btnSuscribite{
+        background-color: #fbbc5f;
+        font-size: 20px;
+        font-weight: bold;
+        box-shadow: 3px 3px black;
+        border-radius: 6%;
+        text-decoration: none;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: 5px;
+    }
+}
+
+@media  screen and (min-width:1024px) {
+    .newsletter{
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 0.7fr;
+        
+    
+        grid-template-areas: 
+                            "suscribite imgNews" 
+                            "form form ";
+                           
+        align-items: center;                 
+    
+        
+    }
+
+
+    .suscribite{
+    grid-area: suscribite;
+    font-size: 2em;
+    }
+    
+    .form{
+        grid-area: form;
+    }
+    
+    .imgNewsClass{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .imgNews{
+        grid-area: imgNews;
+        height: 500px;
+        width: 500px;
+    }
+
+    .mail{
+        padding-top: 1.7em;
+        padding-bottom: 2em;
+        padding-right: 30em;
+        font-weight: bold;
+        box-shadow: 3px 3px black;
+        border-radius: 6%;
+        text-decoration: none
+        
+    }
+    
+    .btnSuscribite{
+        background-color: #fbbc5f;
+        font-size: 20px;
+        font-weight: bold;
+        box-shadow: 3px 3px black;
+        border-radius: 6%;
+        text-decoration: none;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: 5px;
+    }
+}
