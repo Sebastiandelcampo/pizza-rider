@@ -9,7 +9,7 @@
 body{
     margin-left: 60px;
     margin-right: 60px;
-    background-image: linear-gradient(to bottom, #0388cb, rgb(190, 190, 61) );
+    background-image: linear-gradient(to bottom, #358cb7, rgb(61, 182, 193) );
 
 }
 
@@ -20,6 +20,10 @@ body{
 
 .logo img{
     margin-top: 10px;
+}
+
+header{
+    position: sticky;
 }
 
 header nav ul{
