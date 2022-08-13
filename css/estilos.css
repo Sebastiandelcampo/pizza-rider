@@ -22,9 +22,7 @@ body{
     margin-top: 10px;
 }
 
-header{
-    position: sticky;
-}
+
 
 header nav ul{
     display: flex;
@@ -41,7 +39,7 @@ header nav ul{
 
 nav ul li{
     display: inline;
-    padding: 5px;
+    padding: 10px;
     align-items: center;
     background-color: #fbbc5f;
     font-size: 20px;
@@ -49,7 +47,13 @@ nav ul li{
     box-shadow: 3px 3px black;
     border-radius: 6%;
     text-decoration: none;
+    margin-right: 5px;
+    transition: 0.5s;
 
+}
+
+nav ul li:hover{
+    transform: scale(1.1)
 }
 
 
@@ -58,8 +62,8 @@ a:link, a:visited, a:active {
     text-decoration:none;
 }
 
-.link { color: black; } 
-.link:hover { color: whitesmoke; }
+.link { color: black; 
+} 
 
 h1{
     display: flex;
@@ -162,7 +166,7 @@ h1{
     padding-left: 5px;
     padding-right: 5px;
     margin-left: 5px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .btnSuscribite:hover{

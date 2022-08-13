@@ -8,24 +8,27 @@
     <title>Pizza Rider</title>
 </head>
 <body>
-        <header>
-            <h1>Contacto</h1>
-            <!--Navbar-->
-            <nav>
-                <ul>
-                    <li><a class="link" href="../index.html">Home</a></li>
-                    <li><a class="link" href="nosotros.html">Nosotros</a></li>
-                    <li><a class="link" href="catering.html">Catering</a></li>
-                    <li><a class="link" href="frozen.html">Frozen</a></li>
-                    <li><a class="link" href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+    <header>
+    <div class="logo">
+        <img src="../img/logo2.png" alt="Logo Pizza Rider">
+    </div>
+        <!--Navbar-->
+        <nav>
+            <ul>
+                <li><a class="link" href="../index.html">Home</a></li>
+                <li><a class="link" href="nosotros.html">Nosotros</a></li>
+                <li><a class="link" href="catering.html">Catering</a></li>
+                <li><a class="link" href="frozen.html">Frozen</a></li>
+                <li><a class="link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+</header>
+
     <main>
 
                 <div>
                     <form class="contacto" action="" method="">
                         <fieldset>
-                            <legend> ¡Contactanos! </legend>
                     
                             <div>
                                 <label for="nombre">
@@ -41,17 +44,21 @@
                         </div>
                     
                         <div>
-                            <label for="pais">País</label>
+                            <label for="tipo">Tipo de Evento</label>
 
-                                <select name="pais" id="pais">
-                                    <option value="Argentina">Argentina</option>
-                                    <option value="Colombia">Colombia</option>
-                                    <option value="Uruguay">Uruguay</option>
+                                <select name="tipo" id="tipo">
+                                    <option value="cumpleaños">Cumpleaños</option>
+                                    <option value="casamientos">Casamientos</option>
+                                    <option value="eventos">Eventos</option>
                                 </select>
                         </div>
                         <div>
-                            <input type="submit" name="" id="" value="Aceptar">
-                            <input type="reset" name="" id="" value="Borrar datos">
+                            <label for="mensaje">Mensaje</label>
+                            <input type="text-area" name="mensaje" id="mensaje" placeholder="Dejanos tu mensaje">
+
+                        </div>
+                        <div>
+                            <input type="submit" name="" id="" value="Enviar">
                         </div>
 
                     
