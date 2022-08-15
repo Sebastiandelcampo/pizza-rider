@@ -92,17 +92,6 @@ a:link, a:visited, a:active {
     margin-top: 50px;
 }
 
-/*
-
-.diferente{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-*/
-
-
 
 .dif2{
     width: 200px;
@@ -202,6 +191,33 @@ a:link, a:visited, a:active {
     margin-top: 8em;
     margin-bottom: 10em;
 }
+
+/* CATERING */
+.casamientos{
+    margin-top: 4em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 4em;
+}
+
+.eventos{
+    margin-top: 4em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 4em;
+}
+
+.eventos-txt{
+    margin-top: 1em;
+}
+
+.cumple{
+    margin-top: 4em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 4em;
+}
+
 
 
 /* Contacto */
@@ -405,6 +421,11 @@ a:link, a:visited, a:active {
     }
 }
 
+@media  screen and (min-width:992px) {
+    .eventos-txt{
+    }
+}
+
 @media  screen and (min-width:993px) {
 
     .btnSuscribite{
@@ -499,5 +520,16 @@ a:link, a:visited, a:active {
     width: 800px;
 }
 
+.casamientos{
+    margin-top: 10em;
+}
+
+.eventos{
+    margin-top: 10em;
+}
+
+.cumple{
+    margin-top: 10em;
+}
     
 }
