@@ -9,8 +9,8 @@ c
 body{
     margin-left: 60px;
     margin-right: 60px;
-    background-image: linear-gradient(to bottom, #358cb7, rgb(61, 182, 193) );
-    
+    background-image: linear-gradient(to bottom, #3AB4F2, #0078AA);
+    color: #F6F6F6;
 }
 
 .logo{
@@ -21,7 +21,6 @@ body{
 .logo img{
     margin-top: 10px;
 }
-
 
 
 header nav ul{
@@ -386,9 +385,6 @@ a:link, a:visited, a:active {
     }
     
    
-    
-    
-  
 
     .imgNews{
         height: 500px;
@@ -421,10 +417,7 @@ a:link, a:visited, a:active {
     }
 }
 
-@media  screen and (min-width:992px) {
-    .eventos-txt{
-    }
-}
+
 
 @media  screen and (min-width:993px) {
 
@@ -462,8 +455,22 @@ a:link, a:visited, a:active {
 
 
 @media  screen and (min-width:1024px) {
-   
 
+    nav ul li{
+        padding: 10px;
+        padding-bottom: 10px;
+        background-color: #fbbc5f;
+        font-size: 20px;
+        font-weight: bold;
+        box-shadow: 3px 3px black;
+        border-radius: 10%;
+        text-decoration: none;
+        margin-right: 5px;
+        transition: 0.5s;
+    
+    }
+   
+    
 
     .suscribite{
         font-size: 2em;
@@ -516,8 +523,9 @@ a:link, a:visited, a:active {
 }
 
 .carousel-inner{
+    
     height: 500px;
-    width: 800px;
+    width: 80%; 
 }
 
 .casamientos{
