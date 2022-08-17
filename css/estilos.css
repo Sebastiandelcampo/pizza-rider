@@ -78,6 +78,9 @@ h1{
     margin-bottom: 100px;
 }
 
+/* DIFERENCIA */
+
+
 .h2home{
     display: flex;
     height: 100px;
@@ -85,13 +88,13 @@ h1{
 }
 
 
-
 .diferente{
     display: flex;
-    height: 200px;
+    height: 400px;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
+    row-gap: 3em;
 }
 
 .dif2{
@@ -99,23 +102,28 @@ h1{
     width: 200px;
     margin-left: 50px;
     margin-right: 50px;
+
 }
 
 .dif2 h4{
     margin-bottom: 10px;
 }
 
+
+/* NEWSLETTER */
+
 .newsletter{
     margin-top: 300px;
     margin-left: 1em;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 0.3fr 0.4fr 1fr;
+    grid-template-rows: 1fr;
 
     grid-template-areas: 
                         "suscribite" 
-                        "form"
-                        "imgNews";
+                        "mail"
+                        "btnSuscribite"
+                        "img-nws";
 
     justify-content: center;
     justify-items: center;
@@ -125,25 +133,16 @@ h1{
 .suscribite{
     grid-area: suscribite;
     font-size: 1.7em;
-}
-
-.form{
-    grid-area: form;
-    display: flex;
-    justify-items:center;
-    align-items: center;
-}
-
-.form input{
-    display: inline;
+    margin-bottom: 2em;
 }
 
 
-.imgNews{
-    grid-area: imgNews;
+.img.nws{
+    grid-area: img-nws;
 }
 
 .mail{
+    grid-area: mail;
     padding-top: 1.7em;
     padding-bottom: 2em;
     padding-right: 14em;
@@ -155,6 +154,7 @@ h1{
 }
 
 .btnSuscribite{
+    grid-area: btnSuscribite;
     background-color: #fbbc5f;
     font-size: 20px;
     font-weight: bold;
@@ -166,6 +166,8 @@ h1{
     padding-left: 5px;
     padding-right: 5px;
     margin-left: 5px;
+    margin-top: 2em;
+    margin-bottom: 2em;
     transition: 0.5s;
 }
 
@@ -192,9 +194,7 @@ footer{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 1fr;
-    grid-template-areas: "titleNos"
-                         "p-h"
-                         "p-h2" 
+    grid-template-areas: "txt-h"
                          "img-h";      
     
     row-gap: 40px;
@@ -202,31 +202,15 @@ footer{
     
 }
 
-.titleNos{
-    grid-area: titleNos;
-    justify-self: center;
-
-}
-
-.p-h{
-    grid-area:p-h;
-    justify-self: center;
-    margin-right: 1em;
-    margin-left: 1em;
-
-}
-
-.p-h2{
-    grid-area:p-h2;
-    justify-self: center;
-    margin-right: 1em;
-    margin-left: 1em;
+.txt-h{
+    grid-area: txt-h;
 }
 
 .img-h{
-    grid-area:img-h;
-    justify-self: center;
+    grid-area: img-h;
+    margin-bottom: 4em;
 }
+
 
 
 
@@ -234,9 +218,7 @@ footer{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 1fr;
-    grid-template-areas: "titleNos2"
-                         "p-p"
-                         "p-p2" 
+    grid-template-areas: "txt-p"
                          "img-p";      
     
     row-gap: 40px;
@@ -244,70 +226,145 @@ footer{
     
 }
 
-.titleNos2{
-    grid-area: titleNos2;
-    justify-self: center;
-}
-
-.p-p{
-    grid-area: p-p;
-    justify-self: center;
-    margin-right: 1em;
-    margin-left: 1em;
-}
-
-.p-p2{
-    grid-area: p-p2;
-    justify-self: center;
-    margin-right: 1em;
-    margin-left: 1em;
+.txt-p{
+    grid-area: txt-p;
 }
 
 .img-p{
     grid-area: img-p;
-    justify-self: center;
-
+    margin-bottom: 6em;
 }
 
-.galeria{
+/* CATERING */
+
+.casamientos{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 1fr;
-    grid-template-areas: "titleNos3"
-                         "gal1"
-                         "gal2" 
-                         "gal3";      
-    
-    row-gap: 50px;
-    justify-content: center;
+    grid-template-areas: 
+                        "txt-casam"
+                        "img-casam";
 }
 
-.titleNos3{
-    grid-area: titleNos3;
-    justify-self: center;
+.txt-casam{
+    grid-area: txt-casam;
+    margin-bottom: 2em;
+
 }
 
-.gal1{
-    grid-area: img-p;
-    justify-self: center;
+.img-casam{
+    grid-area: img-casam;
+    margin-bottom: 4em;
+}
+
+.title-cas{
+    margin-bottom: 1em;
+}
+
+.eventos{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+                        "txt-even"
+                        "img-even";
+}
+
+.txt-even{
+    grid-area: txt-even;
+    margin-bottom: 2em;
+}
+
+.img-even{
+    grid-area: img-even;
+    margin-bottom: 4em;
+}
+
+.title-even{
+    margin-bottom: 1em;
+}
+
+.cumple{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+                        "txt-cumple"
+                        "img-cumple";
+}
+
+.txt-cumple{
+    grid-area: txt-cumple;
+    margin-bottom: 2em;
+
+}
+
+.img-cumple{
+    grid-area: img-cumple;
+    margin-bottom: 4em;
+}
+
+.title-cumple{
+    margin-bottom: 1em;
+}
+
+
+/*FROZEN*/
+
+.frozen{
+    margin-bottom: 5em;
+}
+
+.txt-pizza{
+    margin-bottom: 3em;
+}
+
+.gustosC1C2{
     margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.gustosC1{
+    margin-bottom: 2em;
+}
+
+.gustosC3{
+    margin-bottom: 2em;
+}
+
+.gustosC3C4{
+    margin-bottom: 5em;
 
 }
-.gal2{
-    grid-area: img-p;
-    justify-self: center;
+
+.gustosP1P2{
     margin-top: 1em;
-
+    margin-bottom: 2em;
 
 }
-.gal3{
-    grid-area: img-p;
-    justify-self: center;
+
+.gustosP3P4{
+    margin-bottom: 5em;
+
+}
+
+.gustosP1{
+    margin-bottom: 2em;
+}
+
+.gustosP3{
+    margin-bottom: 2em;
+}
+
+.gustosD1D2{
     margin-top: 1em;
-
+    margin-bottom: 3em;
 
 }
 
+.gustosD1{
+    margin-bottom: 2em;
+}
 /* Contacto */
 
 .contacto{
@@ -322,8 +379,9 @@ footer{
 
 
 
-/* MEDIA QUERIES */
+ /*MEDIA QUERIES*/
 
+/*
 @media  screen and (min-width:600px) {
     .newsletter{
         margin-top: 300px;
@@ -386,18 +444,22 @@ footer{
     }
     
 }
+*/
 
 @media  screen and (min-width:720px) {
     .newsletter{
         margin-top: 200px;
         display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: auto ;
+        grid-template-rows: 1fr ;
         
     
         grid-template-areas: 
-                            "suscribite imgNews" 
-                            "form form";
+                            "suscribite" 
+                            "mail"
+                            "btnSuscribite"
+                            "img-nws";
+                            
                            
                             
     column-gap: 0.9em;
@@ -410,25 +472,17 @@ footer{
         font-size: 2em;
     }
     
-    .form{
-        grid-area: form;
-        
-    }
-    
-    
-    
-    .imgNewsClass{
-        max-width: 100%;
-        max-height: 100%;
-    }
 
-    .imgNews{
-        grid-area: imgNews;
+    
+
+    .img-nws{
+        grid-area: img-nws;
         height: 350px;
         width: 350px;
     }
 
     .mail{
+        grid-area: mail;
         padding-top: 1.7em;
         padding-bottom: 2em;
         padding-right: 24em;
@@ -440,6 +494,7 @@ footer{
     }
     
     .btnSuscribite{
+        grid-area: suscribite;
         background-color: #fbbc5f;
         font-size: 20px;
         font-weight: bold;
@@ -452,7 +507,65 @@ footer{
         padding-right: 5px;
         margin-left: 5px;
     }
+
+    /*FROZEN*/
+
+    .frozen{
+        margin-bottom: 5em;
+    }
+    
+    
+    
+    .gustosC1C2{
+        display: flex;
+        margin-top: 1em;
+        margin-bottom: 3em;
+        justify-content: space-around;
+    }
+    
+    .gustosC3C4{
+        display: flex;
+        margin-bottom: 5em;
+        justify-content: space-around;
+    
+    }
+    
+    .gustosP1P2{
+        display: flex;
+        margin-top: 1em;
+        margin-bottom: 3em;
+        justify-content: space-around;
+    
+    }
+    
+    .gustosP3P4{
+        display: flex;
+        margin-bottom: 5em;
+        justify-content: space-around;
+    
+    }
+    
+    .gustosD1D2{
+        display: flex;
+        margin-top: 1em;
+        margin-bottom: 3em;
+        justify-content: space-around;
+    
+    }
 }
+
+
+
+@media screen and (min-width:992px) {
+
+    .txt-pizza{
+       margin-left: 2em;
+    }
+    
+
+}
+
+
 
 @media  screen and (min-width:1024px) {
     .newsletter{
@@ -463,8 +576,9 @@ footer{
         
     
         grid-template-areas: 
-                            "suscribite imgNews" 
-                            "form form ";
+                            "suscribite img-nws" 
+                            "mail mail"
+                            "btnSuscribite btnSuscribite";
                            
         align-items: center;                 
     
@@ -477,25 +591,21 @@ footer{
     font-size: 2em;
     }
     
-    .form{
-        grid-area: form;
-    }
     
-    .imgNewsClass{
-        max-width: 100%;
-        max-height: 100%;
-    }
+    
+   
 
-    .imgNews{
-        grid-area: imgNews;
+    .img-nws{
+        grid-area: img-nws;
         height: 500px;
         width: 500px;
     }
 
     .mail{
+        grid-area: mail;
         padding-top: 1.7em;
         padding-bottom: 2em;
-        padding-right: 30em;
+        padding-right: 22em;
         font-weight: bold;
         box-shadow: 3px 3px black;
         border-radius: 6%;
@@ -504,6 +614,7 @@ footer{
     }
     
     .btnSuscribite{
+        grid-area: btnSuscribite;
         background-color: #fbbc5f;
         font-size: 20px;
         font-weight: bold;
@@ -516,4 +627,203 @@ footer{
         padding-right: 5px;
         margin-left: 5px;
     }
+
+    .carousel{
+        margin-top: 8em;
+        margin-bottom: 10em;
+    }
+    
+    
+    .carousel{
+        margin-top: 10em;
+    }
+    
+    .carousel-inner{
+        
+        height: 500px;
+        width: 80%; 
+    }
+
+
+    .historia{
+        height: 500px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr;
+        
+    
+        grid-template-areas: 
+                            "txt-h img-h" 
+                            ;
+                           
+        margin-top: 10em;
+    }
+
+    .txt-h{
+        grid-area: txt-h;
+    }
+
+   
+    
+    .img-h{
+        grid-area: img-h;
+    }
+
+    .pizzero{
+        height: 600px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr;
+        
+    
+        grid-template-areas: 
+                            "img-p txt-p" 
+                            ;
+                           
+        margin-top: 3em;
+    }
+
+    .txt-p{
+        grid-area: txt-p;
+        margin-left: 2em;
+    }
+
+   
+    .img-p{
+        grid-area: img-p;
+    }
+
+    /* CATERING */
+
+.casamientos{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+                        "txt-casam img-casam"
+                        ;
+    margin-top: 10em;
+}
+
+.txt-casam{
+    grid-area: txt-casam;
+    margin-bottom: 2em;
+    margin-right: 4em;
+
+}
+
+.img-casam{
+    grid-area: img-casam;
+    margin-bottom: 4em;
+}
+
+.title-cas{
+    margin-bottom: 1em;
+}
+
+.eventos{
+    margin-top: 8em;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+                        "img-even txt-even"
+                        ;
+}
+
+.txt-even{
+    grid-area: txt-even;
+    margin-bottom: 2em;
+    margin-left: 4em;
+}
+
+.img-even{
+    grid-area: img-even;
+    margin-bottom: 4em;
+}
+
+.title-even{
+    margin-bottom: 1em;
+}
+
+.cumple{
+    margin-top: 8em;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+                        "txt-cumple img-cumple"
+                        ;
+}
+
+.txt-cumple{
+    grid-area: txt-cumple;
+    margin-bottom: 2em;
+    margin-right: 4em;
+
+}
+
+.img-cumple{
+    grid-area: img-cumple;
+    margin-bottom: 4em;
+}
+
+.title-cumple{
+    margin-bottom: 1em;
+}
+
+/*FROZEN*/
+
+.frozen{
+    margin-bottom: 5em;
+}
+
+
+
+.gustosC1C2{
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    justify-content: space-around;
+}
+
+.gustosC3C4{
+    display: flex;
+    margin-bottom: 5em;
+    justify-content: space-around;
+
+}
+
+.gustosP1P2{
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    justify-content: space-around;
+
+}
+
+.gustosP3P4{
+    display: flex;
+    margin-bottom: 5em;
+    justify-content: space-around;
+
+}
+
+.gustosD1D2{
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    justify-content: space-around;
+
+}
+
+.txt-pizza{
+    margin-left: 7em;
+ }
+ 
+.txt-frozen{
+    display: flex;
+    justify-content: center;
+}
+
 }
