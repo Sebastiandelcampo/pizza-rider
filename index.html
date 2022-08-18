@@ -12,35 +12,65 @@
 <body>
   
     <header>
-            <div class="logo">
+        <div class="container">
+            <div class="logo d-none d-sm-none d-md-none">
                 <img src="img/logo2.png" alt="Logo Pizza Rider">
             </div>
+        </div>
 
+        
             <!--Navbar-->
-            <nav>
-                <ul>
-                    <li><a class="link" href="index.html">Home</a></li>
-                    <li><a class="link" href="pages/nosotros.html">Nosotros</a></li>
-                    <li><a class="link" href="pages/catering.html">Catering</a></li>
-                    <li><a class="link" href="pages/frozen.html">Frozen</a></li>
-                    <li><a class="link" href="pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-
-            <!--H1-->
-
-            <div>
-                <h1>Pizza Rider - Catering & Frozen</h1>
-            </div>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                 <a class="navbar-brand" href="#"><img src="img/logo2.png" alt="Logo Pizza Rider"></a> 
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="pages/nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="pages/catering.html">Catering</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="pages/frozen.html">Frozen</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="pages/contacto.html">Contacto</a>
+                      </li>
+                    
+                    </ul>
+                  </div>
+                </div>
+              </nav>
 
     </header>
-
+    <div>
+        <hr size="3px" width="100%" color="#F6F6F6">  
+    </div>
     <main>
+
+         <!--H1-->
+         <div class="container">
+            <div class="row">
+                <h1 class="titleHome col-12">Pizza Rider - Catering & Frozen</h1>
+            </div>
+         </div>
+
 
         <!--Imagen hero-->
 
         <div class="hero">
             <img src="img/ruculayjamon.jpeg" alt="Pizza de rucula y jamon crudo">
+        </div>
+
+        <div>
+            <hr size="3px" width="100%" color="#F6F6F6">  
         </div>
 
         <!--Seccion "que nos difernecia"-->
@@ -68,7 +98,9 @@
             </div>
         </div>
 
-
+        <div>
+            <hr size="3px" width="100%" color="#F6F6F6">  
+        </div>
        
         <!--newsletter-->
 
@@ -96,19 +128,24 @@
 
     </main>
 
-    
+    <div>
+        <hr size="3px" width="100%" color="#F6F6F6">  
+    </div>
 
-    <!--Footer-->
+     <!--Footer-->
     
-    <footer>
-            Todos los derechos reservados 
-            
-            <div>
-            <a href="https://es-la.facebook.com/" target="_blank"><img src="./img/facebook.png" alt="Icono de facebook"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" alt="Icono de  instagram"></a>
-            Pizza Rider 2022
+  <div class="container">
+      <footer class="row">
+            <div class="col-6">
+                <p>¡Seguinos!</p>
+                <a href="https://es-la.facebook.com/" target="_blank"><img src="./img/facebook.png" alt="Icono de facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" alt="Icono de  instagram"></a>                
             </div>
-    </footer>
+            <div class="col-6">
+                <p>Todos los derechos reservados - Pizza Rider 2022</p> 
+             </div>
+      </footer>
+  </div>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
