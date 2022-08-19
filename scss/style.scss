@@ -89,7 +89,7 @@ main{
         }
         .diferente{
             display: flex;
-            height: 400px;
+            height: 500px;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
@@ -114,68 +114,51 @@ main{
     }
     .newsletter{
         margin-top: 8em;
-        margin-left: 1em;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 1fr;
-    
-        grid-template-areas: 
-                            "suscribite" 
-                            "mail"
-                            "btnSuscribite"
-                            "img-nws";
-    
-        justify-content: center;
-        justify-items: center;
 
-        .img-nws{
-            grid-area: img-nws;
-        }
+       
 
-        .txt-nws{
-            .suscribite{
-                grid-area: suscribite;
-                font-size: 1.7em;
-                margin-bottom: 2em;
+        .suscribite{
+            font-size: 2em;
+            margin-bottom: 1em;
+            margin-top: 0px;
             }
-        }
+        
 
         .form{
             .mail{
-                .in-mail{
-                    grid-area: in-mail;
-                    padding-top: 1.7em;
-                    padding-bottom: 2em;
-                    padding-right: 14em;
-                    font-weight: bold;
-                    box-shadow: 3px 3px black;
-                    border-radius: 6%;
-                    text-decoration: none
-                
-                }
+                padding-top: 1.7em;
+                padding-bottom: 2em;
+                 padding-right: 10em;
+                 font-weight: bold;
+                 box-shadow: 3px 3px black;
+                 border-radius: 6%;
+                text-decoration: none
              }
-             .btnS{
-                .btnSuscribite{
-                    grid-area: btnSuscribite;
-                    background-color: $color-btn;
-                    font-size: 20px;
-                    font-weight: bold;
-                    box-shadow: 3px 3px black;
-                    border-radius: 6%;
-                    text-decoration: none;
-                    padding-top: 1em;
-                    padding-bottom: 1em;
-                    padding-left: 5px;
-                    padding-right: 5px;
-                    margin-left: 5px;
-                    margin-top: 2em;
-                    margin-bottom: 2em;
-                    transition: 0.5s;
-                }
-            
-                 .btnSuscribite:hover{
-                    transform: scale(1.1);
-                }
+             .btnSuscribite{
+                grid-area: btnSuscribite;
+                background-color: $color-btn;
+                font-size: 20px;
+                font-weight: bold;
+                box-shadow: 3px 3px black;
+                border-radius: 6%;
+                text-decoration: none;
+                padding-top: 1em;
+                padding-bottom: 1em;
+                padding-left: 5px;
+                padding-right: 5px;
+                margin-left: 5px;
+                margin-top: 2em;
+                margin-bottom: 2em;
+                transition: 0.5s;
+            }
+        
+             .btnSuscribite:hover{
+                transform: scale(1.1);
+            }
+            .imgNews{
+                margin-top: 2em;
+                height: 400px;
+                width: 400px;
             }
         }
 
@@ -437,30 +420,19 @@ main{
     main{
         .newsletter{
             margin-top: 200px;
-            display: grid;
-            grid-template-columns: auto ;
-            grid-template-rows: 1fr ;
-            grid-template-areas: 
-                                "suscribite" 
-                                "mail"
-                                "btnSuscribite"
-                                "img-nws";                   
-        column-gap: 0.9em;
+            
         .txt-news{
             .suscribite{
-                grid-area: suscribite;
                 font-size: 2em;
             }   
         }
         
         .img-nws{
-            grid-area: img-nws;
             height: 350px;
             width: 350px;
         }
     
         .mail{
-            grid-area: mail;
             padding-top: 1.7em;
             padding-bottom: 2em;
             padding-right: 24em;
@@ -564,34 +536,50 @@ main{
 @media  screen and (min-width:1024px) {
 
     main{
+        .section2{
+            .diferente{
+                height: 200px;
+            }
+        }
         .newsletter{
-            margin-top: 100px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto;
-            grid-template-areas: 
-                                "suscribite img-nws" 
-                                "in-mail img-nws"
-                                "btnSuscribite img-nws";
-                               
-            align-items: center;
+            margin-top: 6em;
+            margin-bottom: 6em;
 
             .txt-nws{
                 .suscribite{
-                    grid-area: suscribite;
                     font-size: 2em;
                 }   
             }
 
             .img-nws{
-                grid-area: img-nws;
                 height: 500px;
                 width: 500px;
             }
             
-            .mail{
-                .in-mail{
-                    grid-area: in-mail;
+            .form{
+                .mail{
+                    padding-top: 1.7em;
+                    padding-bottom: 2em;
+                    padding-right: 20em;
+                    font-weight: bold;
+                    box-shadow: 3px 3px black;
+                    border-radius: 6%;
+                    text-decoration: none
+                    
+                }
+                
+                .btnSuscribite{
+                    background-color: #fbbc5f;
+                    font-size: 20px;
+                    font-weight: bold;
+                    box-shadow: 3px 3px black;
+                    border-radius: 6%;
+                    text-decoration: none;
+                    padding-top: 1em;
+                    padding-bottom: 1em;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    margin-left: 5px;
                 }
             }
            
