@@ -24,6 +24,8 @@ body{
 
 
 
+
+
 header nav ul{
     display: flex;
     column-gap: 10px;
@@ -111,6 +113,7 @@ h1{
 .dif2 h4{
     margin-bottom: 10px;
 }
+
 
 
 /* NEWSLETTER */
@@ -317,11 +320,24 @@ footer{
 }
 
 
+
 /*FROZEN*/
+
+
+.frz{
+    margin-top: 4em;
+}
 
 .frozen{
     margin-bottom: 5em;
-    margin-top: 9em;
+}
+
+.txt-frozen{
+    justify-self: center;
+}
+
+.img-frozen{
+    justify-self: center;
 }
 
 .txt-pizza{
@@ -335,6 +351,7 @@ footer{
 .gustosC1C2{
     margin-top: 1em;
     margin-bottom: 2em;
+    
 }
 
 .gustosC1{
@@ -347,17 +364,20 @@ footer{
 
 .gustosC3C4{
     margin-bottom: 5em;
+ 
 
 }
 
 .gustosP1P2{
     margin-top: 1em;
     margin-bottom: 2em;
+    
 
 }
 
 .gustosP3P4{
     margin-bottom: 5em;
+  
 
 }
 
@@ -372,12 +392,16 @@ footer{
 .gustosD1D2{
     margin-top: 1em;
     margin-bottom: 3em;
+    
 
 }
 
 .gustosD1{
     margin-bottom: 2em;
 }
+
+
+
 /* Contacto */
 
 .contacto{
@@ -448,7 +472,7 @@ footer{
  /*MEDIA QUERIES*/
 
 
-/*
+
 @media screen and (min-width:720px) {
 
     .newsletter{
@@ -506,7 +530,7 @@ footer{
         padding-right: 5px;
         margin-left: 5px;
     }
-    */
+    
 
     /*FROZEN*/
 
@@ -554,7 +578,7 @@ footer{
     }
 
 
-
+}
 
 @media screen and (min-width:992px) {
 
@@ -774,9 +798,19 @@ footer{
 
 /*FROZEN*/
 
+
+
 .frozen{
     margin-bottom: 5em;
+    margin-top: 9em;
+    display: flex;
+   
+    }
+
+.txt-frozen{
+    margin-right: 4em;
 }
+
 
 
 
@@ -855,5 +889,7 @@ margin-top: 3em;
     box-shadow: 3px 3px black;
     border-radius: 6%;
     text-decoration: none
+
+}
 
 }
