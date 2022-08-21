@@ -56,9 +56,12 @@ main .hero {
   display: flex;
   justify-content: center;
   margin-bottom: 100px; }
+  main .hero .img-fluid {
+    box-shadow: 10px 10px 20px black; }
 
 main .section2 {
-  margin-bottom: 300px; }
+  margin-bottom: 300px;
+  height: 900px; }
   main .section2 .h2home {
     display: flex;
     height: 150px;
@@ -73,15 +76,17 @@ main .section2 {
     margin-bottom: 50px;
     row-gap: 3em; }
     main .section2 .diferente .dif2 {
-      height: 150px;
       width: 200px;
       margin-left: 50px;
       margin-right: 50px; }
-      main .section2 .diferente .dif2 h4 {
-        margin-bottom: 10px; }
+      main .section2 .diferente .dif2 .icon {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 4em; }
 
 .newsletter {
-  margin-top: 8em; }
+  margin-top: 10em;
+  height: auto; }
   .newsletter .suscribite {
     font-size: 2em;
     margin-bottom: 1em;
@@ -116,6 +121,8 @@ main .section2 {
     margin-top: 2em;
     height: 400px;
     width: 400px; }
+  .newsletter .form .imgNewsClass img {
+    box-shadow: 10px 10px 20px black; }
 
 footer {
   margin-top: 100px;
@@ -134,7 +141,8 @@ main .historia {
     grid-area: txt-h; }
   main .historia .img-h {
     grid-area: img-h;
-    margin-bottom: 4em; }
+    margin-bottom: 4em;
+    box-shadow: 10px 10px 20px black; }
 
 main .pizzero {
   display: grid;
@@ -147,7 +155,8 @@ main .pizzero {
     grid-area: txt-p; }
   main .pizzero .img-p {
     grid-area: img-p;
-    margin-bottom: 6em; }
+    margin-bottom: 6em;
+    box-shadow: 10px 10px 20px black; }
 
 main .gal-fotos {
   display: flex;
@@ -165,9 +174,27 @@ main .casamientos {
     margin-bottom: 2em; }
     main .casamientos .txt-casam .title-cas {
       margin-bottom: 1em; }
+    main .casamientos .txt-casam form div a .btn-reservar {
+      background-color: #fbbc5f;
+      font-size: 20px;
+      font-weight: bold;
+      box-shadow: 3px 3px black;
+      border-radius: 6%;
+      text-decoration: none;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 1em;
+      padding-right: 1em;
+      margin-left: 5px;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      transition: 0.5s; }
+    main .casamientos .txt-casam form div a .btn-reservar:hover {
+      transform: scale(1.1); }
   main .casamientos .img-casam {
     grid-area: img-casam;
-    margin-bottom: 4em; }
+    margin-bottom: 4em;
+    box-shadow: 10px 10px 20px black; }
 
 main .eventos {
   display: grid;
@@ -179,9 +206,27 @@ main .eventos {
     margin-bottom: 2em; }
     main .eventos .txt-even .title-even {
       margin-bottom: 1em; }
+    main .eventos .txt-even form div a .btn-reservar {
+      background-color: #fbbc5f;
+      font-size: 20px;
+      font-weight: bold;
+      box-shadow: 3px 3px black;
+      border-radius: 6%;
+      text-decoration: none;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 1em;
+      padding-right: 1em;
+      margin-left: 5px;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      transition: 0.5s; }
+    main .eventos .txt-even form div a .btn-reservar:hover {
+      transform: scale(1.1); }
   main .eventos .img-even {
     grid-area: img-even;
-    margin-bottom: 4em; }
+    margin-bottom: 4em;
+    box-shadow: 10px 10px 20px black; }
 
 main .cumple {
   display: grid;
@@ -193,9 +238,27 @@ main .cumple {
     margin-bottom: 2em; }
     main .cumple .txt-cumple .title-cumple {
       margin-bottom: 1em; }
+    main .cumple .txt-cumple form div a .btn-reservar {
+      background-color: #fbbc5f;
+      font-size: 20px;
+      font-weight: bold;
+      box-shadow: 3px 3px black;
+      border-radius: 6%;
+      text-decoration: none;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 1em;
+      padding-right: 1em;
+      margin-left: 5px;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      transition: 0.5s; }
+    main .cumple .txt-cumple form div a .btn-reservar:hover {
+      transform: scale(1.1); }
   main .cumple .img-cumple {
     grid-area: img-cumple;
-    margin-bottom: 4em; }
+    margin-bottom: 4em;
+    box-shadow: 10px 10px 20px black; }
 
 /*FROZEN*/
 main .frz {
@@ -295,6 +358,8 @@ main div .contacto {
 
 /*MEDIA QUERIES*/
 @media screen and (min-width: 720px) {
+  main .section2 {
+    height: 500px; }
   main .newsletter {
     margin-top: 200px; }
     main .newsletter .txt-news .suscribite {
@@ -356,11 +421,13 @@ main div .contacto {
   main .premium .txt-pizza {
     margin-left: 2em; }
   main .deluxe .txt-pizza {
-    margin-left: 2em; } }
+    margin-left: 2em; }
+  main .newsletter .form .mail {
+    padding-right: 2em; } }
 
 @media screen and (min-width: 1024px) {
-  main .section2 .diferente {
-    height: 200px; }
+  main .section2 {
+    height: 400px; }
   main .newsletter {
     margin-top: 6em;
     margin-bottom: 6em; }
