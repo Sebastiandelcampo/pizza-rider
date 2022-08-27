@@ -1,4 +1,9 @@
 /* RESET*/
+main .casamientos, main .eventos, main .cumple {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr; }
+
 * {
   margin: 0px;
   padding: 0px;
@@ -165,9 +170,6 @@ main .gal-fotos {
 
 /* CATERING */
 main .casamientos {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 1fr;
   grid-template-areas: "txt-casam" "img-casam"; }
   main .casamientos .txt-casam {
     grid-area: txt-casam;
@@ -176,11 +178,7 @@ main .casamientos {
       margin-bottom: 1em; }
     main .casamientos .txt-casam form div a .btn-reservar {
       background-color: #fbbc5f;
-      font-size: 20px;
-      font-weight: bold;
-      box-shadow: 3px 3px black;
-      border-radius: 6%;
-      text-decoration: none;
+      transition: 0.5s;
       padding-top: 1em;
       padding-bottom: 1em;
       padding-left: 1em;
@@ -188,7 +186,11 @@ main .casamientos {
       margin-left: 5px;
       margin-top: 2em;
       margin-bottom: 2em;
-      transition: 0.5s; }
+      font-size: 20px;
+      font-weight: bold;
+      box-shadow: 3px 3px black;
+      border-radius: 6%;
+      text-decoration: none; }
     main .casamientos .txt-casam form div a .btn-reservar:hover {
       transform: scale(1.1); }
   main .casamientos .img-casam {
@@ -197,9 +199,6 @@ main .casamientos {
     box-shadow: 10px 10px 20px black; }
 
 main .eventos {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 1fr;
   grid-template-areas: "txt-even" "img-even"; }
   main .eventos .txt-even {
     grid-area: txt-even;
@@ -208,11 +207,7 @@ main .eventos {
       margin-bottom: 1em; }
     main .eventos .txt-even form div a .btn-reservar {
       background-color: #fbbc5f;
-      font-size: 20px;
-      font-weight: bold;
-      box-shadow: 3px 3px black;
-      border-radius: 6%;
-      text-decoration: none;
+      transition: 0.5s;
       padding-top: 1em;
       padding-bottom: 1em;
       padding-left: 1em;
@@ -220,7 +215,11 @@ main .eventos {
       margin-left: 5px;
       margin-top: 2em;
       margin-bottom: 2em;
-      transition: 0.5s; }
+      font-size: 20px;
+      font-weight: bold;
+      box-shadow: 3px 3px black;
+      border-radius: 6%;
+      text-decoration: none; }
     main .eventos .txt-even form div a .btn-reservar:hover {
       transform: scale(1.1); }
   main .eventos .img-even {
@@ -229,9 +228,6 @@ main .eventos {
     box-shadow: 10px 10px 20px black; }
 
 main .cumple {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 1fr;
   grid-template-areas: "txt-cumple" "img-cumple"; }
   main .cumple .txt-cumple {
     grid-area: txt-cumple;
@@ -240,11 +236,7 @@ main .cumple {
       margin-bottom: 1em; }
     main .cumple .txt-cumple form div a .btn-reservar {
       background-color: #fbbc5f;
-      font-size: 20px;
-      font-weight: bold;
-      box-shadow: 3px 3px black;
-      border-radius: 6%;
-      text-decoration: none;
+      transition: 0.5s;
       padding-top: 1em;
       padding-bottom: 1em;
       padding-left: 1em;
@@ -252,7 +244,11 @@ main .cumple {
       margin-left: 5px;
       margin-top: 2em;
       margin-bottom: 2em;
-      transition: 0.5s; }
+      font-size: 20px;
+      font-weight: bold;
+      box-shadow: 3px 3px black;
+      border-radius: 6%;
+      text-decoration: none; }
     main .cumple .txt-cumple form div a .btn-reservar:hover {
       transform: scale(1.1); }
   main .cumple .img-cumple {

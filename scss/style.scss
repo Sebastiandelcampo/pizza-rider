@@ -1,6 +1,10 @@
 /* RESET*/
 
 @import "utilities/_variables.scss";
+@import "utilities/mixin";
+@import "utilities/extend";
+
+
 
 *{
     margin: 0px;
@@ -38,7 +42,7 @@ header{
             display: flex;
             column-gap: 10px;
             justify-content: center;
-             align-items: center;
+            align-items: center;
             margin-bottom: 80px;
             margin-top: 20px;
             height: 60px;
@@ -103,8 +107,7 @@ main{
                 width: 200px;
                 margin-left: 50px;
                 margin-right: 50px;
-                h4{
-                }
+               
                 .icon{
                     margin-top: 1em;
                     margin-bottom: 1em;
@@ -241,9 +244,7 @@ main{
 /* CATERING */
 main{
     .casamientos{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 1fr;
+        @extend %gridcat;
         grid-template-areas: 
                             "txt-casam"
                             "img-casam";
@@ -258,19 +259,9 @@ main{
                     a{
                         .btn-reservar{
                             background-color: $color-btn;
-                            font-size: 20px;
-                            font-weight: bold;
-                            box-shadow: 3px 3px black;
-                            border-radius: 6%;
-                            text-decoration: none;
-                            padding-top: 1em;
-                            padding-bottom: 1em;
-                            padding-left: 1em;
-                            padding-right: 1em;
-                            margin-left: 5px;
-                            margin-top: 2em;
-                            margin-bottom: 2em;
                             transition: 0.5s;
+                            @include box-btnres;
+
                         }
                         .btn-reservar:hover{
                             transform: scale(1.1)
@@ -288,9 +279,7 @@ main{
 
     }
     .eventos{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 1fr;
+        @extend %gridcat;
         grid-template-areas: 
                             "txt-even"
                             "img-even";
@@ -305,19 +294,9 @@ main{
                     a{
                         .btn-reservar{
                             background-color: $color-btn;
-                            font-size: 20px;
-                            font-weight: bold;
-                            box-shadow: 3px 3px black;
-                            border-radius: 6%;
-                            text-decoration: none;
-                            padding-top: 1em;
-                            padding-bottom: 1em;
-                            padding-left: 1em;
-                            padding-right: 1em;
-                            margin-left: 5px;
-                            margin-top: 2em;
-                            margin-bottom: 2em;
                             transition: 0.5s;
+                            @include box-btnres;
+
                         }
                         .btn-reservar:hover{
                             transform: scale(1.1)
@@ -335,9 +314,7 @@ main{
         }
     }
     .cumple{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 1fr;
+        @extend %gridcat;
         grid-template-areas: 
                             "txt-cumple"
                             "img-cumple";
@@ -352,19 +329,9 @@ main{
                     a{
                         .btn-reservar{
                             background-color: $color-btn;
-                            font-size: 20px;
-                            font-weight: bold;
-                            box-shadow: 3px 3px black;
-                            border-radius: 6%;
-                            text-decoration: none;
-                            padding-top: 1em;
-                            padding-bottom: 1em;
-                            padding-left: 1em;
-                            padding-right: 1em;
-                            margin-left: 5px;
-                            margin-top: 2em;
-                            margin-bottom: 2em;
                             transition: 0.5s;
+                            @include box-btnres;
+
                         }
                         .btn-reservar:hover{
                             transform: scale(1.1)
