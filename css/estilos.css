@@ -311,6 +311,11 @@ main .deluxe .gustosD1D2 {
   main .deluxe .gustosD1D2 .gustosD1 {
     margin-bottom: 2em; }
 
+main .wap {
+  position: fixed;
+  bottom: 1em;
+  right: 0.5em; }
+
 /*CONTACTO*/
 main div .contacto {
   display: flex;
@@ -409,7 +414,11 @@ main div .contacto {
     display: flex;
     margin-top: 1em;
     margin-bottom: 3em;
-    justify-content: space-around; } }
+    justify-content: space-around; }
+  main .wap {
+    position: fixed;
+    bottom: 1em;
+    right: 1em; } }
 
 @media screen and (min-width: 992px) {
   main .clasicas .txt-pizza {
@@ -529,6 +538,10 @@ main div .contacto {
       grid-area: img-cumple;
       margin-bottom: 4em; }
   /*FROZEN*/
+  main .wap {
+    position: fixed;
+    bottom: 1em;
+    right: 1em; }
   /*CONTACTO*/
   main .contacto .campos {
     padding-top: 1.3em;

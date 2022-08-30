@@ -419,7 +419,16 @@ main{
             }
         }
     }
+    .wap{
+        position: fixed;
+        bottom: 1em;
+        right: 0.5em;
+        
+
+    }
 }
+
+
 
  /*CONTACTO*/
 
@@ -572,6 +581,13 @@ main{
             
             } 
         }
+        .wap{
+            position: fixed;
+            bottom: 1em;
+            right: 1em;
+            
+
+        }
     }
 
 
@@ -662,6 +678,7 @@ main{
             
             
         } 
+        
     }
 
     /*NOSOTROS*/
@@ -786,6 +803,17 @@ main{
     }
 
     /*FROZEN*/
+
+    main{
+        .wap{
+            position: fixed;
+            bottom: 1em;
+            right: 1em;
+            
+
+        }
+
+    }
 
     /*CONTACTO*/
     
