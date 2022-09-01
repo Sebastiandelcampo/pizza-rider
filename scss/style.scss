@@ -352,6 +352,12 @@ main{
 /*FROZEN*/
 
 main{
+    .video{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4em;
+        
+    }
     .frz{
         margin-top: 4em;
     }
@@ -471,17 +477,36 @@ main{
                 }
             
             }
-            .drp{ 
-                .dropdown{
-                    padding-top: 1.3em;
-                    padding-bottom: 1.3em;
-                    padding-right: 11em;
-                    font-weight: bold;
-                    box-shadow: 3px 3px black;
-                    border-radius: 6%;
-                    text-decoration: none
+            .inputs1{
+                display: flex;
+                align-content: center;
+                column-gap: 5em;
+                
+            }
+
+            .inputs2{
+                display: flex;
+                align-content: center;
+                column-gap: 5em;
+                .drp{ 
+                    .dropdown{
+                        padding-top: 1.3em;
+                        padding-bottom: 1.3em;
+                        padding-right: 11em;
+                        font-weight: bold;
+                        box-shadow: 3px 3px black;
+                        border-radius: 6%;
+                        text-decoration: none
+                    }
                 }
             }
+            .inputs3{
+                display: flex;
+                align-content: center;
+                column-gap: 5em;
+                
+            }
+            
         }
     }
  }

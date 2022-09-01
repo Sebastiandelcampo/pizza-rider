@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pizza Rider Frozen & Catering: Pizzas congeladas listas para hornear. Servicio de catering para casamientos, eventos corporativos y cumpleaños. ¡Contactanos para reservar tu fecha o hacer tu pedido!">
-    <meta name="keywords" content="pizza,rider,catering,freezadas,eventos,cumpleaños,casamientos, reservar,contacto, muzzarela, cebolla, queso, morron, roquefort, fugazzeta, napolitana, jamon, calabresa, provolone, champignones.">
+    <meta name="keywords" content="pizza,rider,catering,freezadas,eventos,cumpleaños,casamientos, reservar,contacto.">
     <meta property="og:title" content="Pizza Rider Frozen & Catering">
     <meta property="og:description" content="Pizzas congeladas listas para hornear. Servicio de catering para casamientos, eventos corporativos y cumpleaños."> 
     <meta property="og:image" content=""> 
@@ -74,36 +74,37 @@
       <div>
         <form class="contacto" action="" method="">
             <fieldset>
-                <div>
-                    <label for="nombre">
-                            
-                    </label>
+                <div class="inputs1">
+                  <div>
+                      <input class="campos" type="text" name="nombre" id="nombre" placeholder="Nombre">
+                  </div>
+                  <div>
+                    <input class="campos" type="text" name="apellido" id="apellido" placeholder="Apellido">
+                  </div>
+                </div>
 
-                    <input class="campos" type="text" name="nombre" id="nombre" placeholder="Nombre">
+               <div class="inputs2">
+                 <div>
+                 <input class="campos" type="email" name="mail" id="mail" placeholder="nombre@mail.com">
+                 </div>
+                <div class="drp">
+                     <select class="dropdown"  name="tipo" id="tipo" placeholder="Tipo de Evento">
+                         <option value="" disabled selected hidden>Tipo de evento</option>
+                         <option value="cumpleaños">Cumpleaños</option>
+                         <option value="casamientos">Casamiento</option>
+                         <option value="eventos">Evento Corporativo</option>
+                     </select>
+                 </div>
+               </div>
+
+               <div class="inputs3">
+                <div>
+                  <input class="campos" type="date" placeholder="Fecha del Evento">
                 </div>
                 <div>
-                  <label for="apellido">
-                          
-                  </label>
-
-                  <input class="campos" type="text" name="apellido" id="nombre" placeholder="Apellido">
-              </div>
-            <div>
-                <label for="mail"></label>
-
-                <input class="campos" type="email" name="mail" id="mail" placeholder="nombre@mail.com">
-            </div>
-            
-            <div class="drp">
-                <label for="tipo"></label>
-
-                    <select class="dropdown"  name="tipo" id="tipo" placeholder="Tipo de Evento">
-                        <option value="" disabled selected hidden>Tipo de evento</option>
-                        <option value="cumpleaños">Cumpleaños</option>
-                        <option value="casamientos">Casamiento</option>
-                        <option value="eventos">Evento Corporativo</option>
-                    </select>
-            </div>
+                  <input class="campos" type="number" placeholder="Cantidad de invitados">
+                </div>
+               </div>
             
             <div class="btn-form">
                 <input class="enviar" type="submit" name="" id="" value="Enviar">
