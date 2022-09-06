@@ -27,6 +27,9 @@ header .logo {
   header .logo img {
     margin-top: 10px; }
 
+header nav .navbar-collapse {
+  margin-top: 2em; }
+
 header nav ul {
   display: flex;
   column-gap: 10px;
@@ -47,9 +50,14 @@ header nav ul {
     border-radius: 6%;
     text-decoration: none;
     margin-right: 5px;
+    margin-bottom: 0.3em;
     transition: 0.5s; }
   header nav ul li:hover {
     transform: scale(1.1); }
+
+main .linea-nav {
+  margin-top: 9em;
+  margin-bottom: 3em; }
 
 main h1 {
   display: flex;
@@ -268,7 +276,9 @@ main .frz {
 main .frozen {
   margin-bottom: 5em; }
   main .frozen .txt-frozen {
-    justify-self: center; }
+    text-emphasis: center;
+    margin-right: 1em;
+    margin-left: 1em; }
 
 main .clasicas .txt-pizza {
   margin-bottom: 1em; }
@@ -327,6 +337,15 @@ main div .contacto {
   justify-content: center;
   height: auto;
   margin-bottom: 5em; }
+  main div .contacto .dropdown {
+    margin-bottom: 4em;
+    padding-top: 1.3em;
+    padding-bottom: 1.3em;
+    padding-right: 11em;
+    font-weight: bold;
+    box-shadow: 3px 3px black;
+    border-radius: 6%;
+    text-decoration: none; }
   main div .contacto .campos {
     padding-top: 1.3em;
     padding-bottom: 1.3em;
@@ -353,26 +372,12 @@ main div .contacto {
       padding-left: 2em;
       padding-right: 2em;
       margin-left: 5px; }
-  main div .contacto .inputs1 {
-    display: flex;
-    align-content: center;
-    column-gap: 5em; }
-  main div .contacto .inputs2 {
-    display: flex;
-    align-content: center;
-    column-gap: 5em; }
-    main div .contacto .inputs2 .drp .dropdown {
-      padding-top: 1.3em;
-      padding-bottom: 1.3em;
-      padding-right: 11em;
-      font-weight: bold;
-      box-shadow: 3px 3px black;
-      border-radius: 6%;
-      text-decoration: none; }
-  main div .contacto .inputs3 {
-    display: flex;
-    align-content: center;
-    column-gap: 5em; }
+  main div .contacto .inputs1 input::placeholder {
+    text-align: center; }
+  main div .contacto .inputs2 input::placeholder {
+    text-align: center; }
+  main div .contacto .inputs3 .fecha {
+    padding-right: 2em; }
 
 /*MEDIA QUERIES*/
 @media screen and (min-width: 720px) {
@@ -438,6 +443,8 @@ main div .contacto {
     right: 1em; } }
 
 @media screen and (min-width: 992px) {
+  main .linea-nav {
+    margin-top: 2em; }
   main .clasicas .txt-pizza {
     margin-left: 2em; }
   main .premium .txt-pizza {
@@ -448,6 +455,8 @@ main div .contacto {
     padding-right: 2em; } }
 
 @media screen and (min-width: 1024px) {
+  main .linea-nav {
+    margin-top: 2em; }
   main .section2 {
     height: 400px; }
   main .newsletter {
@@ -581,4 +590,24 @@ main div .contacto {
     font-weight: bold;
     box-shadow: 3px 3px black;
     border-radius: 6%;
-    text-decoration: none; } }
+    text-decoration: none; }
+  main .contacto .inputs1 {
+    display: flex;
+    align-content: center;
+    column-gap: 5em; }
+  main .contacto .inputs2 {
+    display: flex;
+    align-content: center;
+    column-gap: 5em; }
+    main .contacto .inputs2 .drp .dropdown {
+      padding-top: 1.3em;
+      padding-bottom: 1.3em;
+      padding-right: 11em;
+      font-weight: bold;
+      box-shadow: 3px 3px black;
+      border-radius: 6%;
+      text-decoration: none; }
+  main .contacto .inputs3 {
+    display: flex;
+    align-content: center;
+    column-gap: 5em; } }

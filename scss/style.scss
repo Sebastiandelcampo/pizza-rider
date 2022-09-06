@@ -38,6 +38,9 @@ header{
     }
 
     nav{
+        .navbar-collapse{
+            margin-top: 2em;
+        }
         ul{
             display: flex;
             column-gap: 10px;
@@ -58,6 +61,7 @@ header{
                 border-radius: 6%;
                 text-decoration: none;
                 margin-right: 5px;
+                margin-bottom: 0.3em;
                 transition: 0.5s;
         
         }
@@ -70,6 +74,10 @@ header{
 }
 
 main{
+    .linea-nav{
+        margin-top: 9em;
+        margin-bottom: 3em;
+    }
     h1{
         display: flex;
         justify-content: center;
@@ -364,7 +372,9 @@ main{
     .frozen{
         margin-bottom: 5em;
         .txt-frozen{
-            justify-self: center;
+            text-emphasis: center;
+            margin-right: 1em;
+            margin-left: 1em;
         }
     }
     .clasicas{
@@ -445,6 +455,17 @@ main{
             justify-content: center;
             height: auto; 
             margin-bottom: 5em;
+            .dropdown{
+                margin-bottom: 4em;
+                padding-top: 1.3em;
+                padding-bottom: 1.3em;
+                padding-right: 11em;
+                font-weight: bold;
+                box-shadow: 3px 3px black;
+                border-radius: 6%;
+                text-decoration: none
+                
+            } 
             .campos{
                 padding-top: 1.3em;
                 padding-bottom: 1.3em;
@@ -453,11 +474,14 @@ main{
                 box-shadow: 3px 3px black;
                 border-radius: 6%;
                 text-decoration: none
+               
                 
             }
             .campos{
                 margin-bottom: 4em;
              }
+            
+             
             .btn-form{
                 display: flex;
                 justify-content: center;
@@ -477,35 +501,28 @@ main{
                 }
             
             }
+
             .inputs1{
-                display: flex;
-                align-content: center;
-                column-gap: 5em;
+                input::placeholder{
+                    text-align: center;
+                }
+            }
+            .inputs2{
+                input::placeholder{
+                    text-align: center;
+                }
                 
             }
 
-            .inputs2{
-                display: flex;
-                align-content: center;
-                column-gap: 5em;
-                .drp{ 
-                    .dropdown{
-                        padding-top: 1.3em;
-                        padding-bottom: 1.3em;
-                        padding-right: 11em;
-                        font-weight: bold;
-                        box-shadow: 3px 3px black;
-                        border-radius: 6%;
-                        text-decoration: none
-                    }
+
+            .inputs3{
+                .fecha{
+                    padding-right: 2em;
+                   
+
                 }
             }
-            .inputs3{
-                display: flex;
-                align-content: center;
-                column-gap: 5em;
-                
-            }
+           
             
         }
     }
@@ -621,6 +638,9 @@ main{
   @media screen and (min-width:992px) {
 
    main{
+    .linea-nav{
+        margin-top: 2em;
+    }
     .clasicas{
         .txt-pizza{
             margin-left: 2em;
@@ -653,7 +673,11 @@ main{
 
 @media  screen and (min-width:1024px) {
 
+    
     main{
+        .linea-nav{
+            margin-top: 2em;
+        }
         .section2{
             height: 400px;
         }
@@ -871,6 +895,35 @@ main{
                 border-radius: 6%;
                 text-decoration: none
             
+            }
+            .inputs1{
+                display: flex;
+                align-content: center;
+                column-gap: 5em;
+                
+            }
+
+            .inputs2{
+                display: flex;
+                align-content: center;
+                column-gap: 5em;
+                .drp{ 
+                    .dropdown{
+                        padding-top: 1.3em;
+                        padding-bottom: 1.3em;
+                        padding-right: 11em;
+                        font-weight: bold;
+                        box-shadow: 3px 3px black;
+                        border-radius: 6%;
+                        text-decoration: none
+                    }
+                }
+            }
+            .inputs3{
+                display: flex;
+                align-content: center;
+                column-gap: 5em;
+                
             }
         }
     }
