@@ -274,11 +274,17 @@ main .frz {
   margin-top: 4em; }
 
 main .frozen {
+  display: flex;
+  align-items: center;
   margin-bottom: 5em; }
   main .frozen .txt-frozen {
-    text-emphasis: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-right: 1em;
     margin-left: 1em; }
+    main .frozen .txt-frozen h2 {
+      margin-bottom: 2em; }
 
 main .clasicas .txt-pizza {
   margin-bottom: 1em; }
@@ -564,6 +570,16 @@ main div .contacto {
       grid-area: img-cumple;
       margin-bottom: 4em; }
   /*FROZEN*/
+  main .frozen {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5em; }
+    main .frozen .txt-frozen h2 {
+      margin-left: 2em;
+      margin-right: 1em;
+      font-size: 2.5em; }
+    main .frozen .txt-frozen .p-f {
+      font-size: 2em; }
   main .wap {
     position: fixed;
     bottom: 1em;
