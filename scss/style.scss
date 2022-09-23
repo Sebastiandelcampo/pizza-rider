@@ -17,6 +17,7 @@ body{
     margin-right: 60px;
     background-image: linear-gradient(to bottom, #3AB4F2, #0078AA);
     color: $color-tipo;
+    
 }
 
 
@@ -115,11 +116,12 @@ main{
                 width: 200px;
                 margin-left: 50px;
                 margin-right: 50px;
+                text-align: center;
                
                 .icon{
                     margin-top: 1em;
                     margin-bottom: 1em;
-                    margin-left: 4em;
+                    margin-left: em;
                 }
             }
             
@@ -146,10 +148,10 @@ main{
             .mail{
                 padding-top: 1.7em;
                 padding-bottom: 2em;
-                 padding-right: 10em;
-                 font-weight: bold;
-                 box-shadow: 3px 3px black;
-                 border-radius: 6%;
+                padding-right: 5em;
+                font-weight: bold;
+                box-shadow: 3px 3px black;
+                border-radius: 6%;
                 text-decoration: none
              }
              .btnSuscribite{
@@ -364,6 +366,8 @@ main{
         display: flex;
         justify-content: center;
         margin-bottom: 4em;
+        overflow: hidden;
+      
         
     }
     .frz{
@@ -468,7 +472,7 @@ main{
                 margin-bottom: 4em;
                 padding-top: 1.3em;
                 padding-bottom: 1.3em;
-                padding-right: 11em;
+                padding-right: 8em;
                 font-weight: bold;
                 box-shadow: 3px 3px black;
                 border-radius: 6%;
@@ -478,7 +482,7 @@ main{
             .campos{
                 padding-top: 1.3em;
                 padding-bottom: 1.3em;
-                padding-right: 10em;
+                padding-right: 7em;
                 font-weight: bold;
                 box-shadow: 3px 3px black;
                 border-radius: 6%;
@@ -748,7 +752,7 @@ main{
             }
         }   .carousel-inner{
             height: 500px;
-            width: 80%; 
+            width: 50%; 
         }
         .historia{
             height: 500px;
