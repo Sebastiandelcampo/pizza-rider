@@ -17,7 +17,8 @@ body{
     margin-right: 60px;
     background-image: linear-gradient(to bottom, #3AB4F2, #0078AA);
     color: $color-tipo;
-    
+    font-family: 'Poppins', sans-serif;
+
 }
 
 
@@ -215,6 +216,9 @@ main{
         justify-content: center;
         .txt-h{
             grid-area: txt-h;
+            .titleNos{
+                margin-bottom: 1em;
+            }
         }
         
         .img-h{
@@ -235,6 +239,9 @@ main{
         justify-content: center;
         .txt-p{
             grid-area: txt-p;
+            .titleNos2{
+                margin-bottom: 1em;
+            }
         }
         
         .img-p{
@@ -468,17 +475,19 @@ main{
             justify-content: center;
             height: auto; 
             margin-bottom: 5em;
-            .dropdown{
-                margin-bottom: 4em;
-                padding-top: 1.3em;
-                padding-bottom: 1.3em;
-                padding-right: 8em;
-                font-weight: bold;
-                box-shadow: 3px 3px black;
-                border-radius: 6%;
-                text-decoration: none
-                
-            } 
+
+            .drp{
+                .dropdown{
+                    margin-bottom: 4em;
+                    padding-top: 1.3em;
+                    padding-bottom: 1.3em;
+                    padding-right: 6.7em;
+                    font-weight: bold;
+                    box-shadow: 3px 3px black;
+                    border-radius: 6%;
+                    text-decoration: none  
+                } 
+            }
             .campos{
                 padding-top: 1.3em;
                 padding-bottom: 1.3em;
@@ -547,7 +556,7 @@ main{
   @media screen and (min-width:720px) {
     main{
         .section2{
-            height: 500px;
+            height: 600px;
         }
         .newsletter{
             margin-top: 200px;
@@ -713,7 +722,7 @@ main{
                 .mail{
                     padding-top: 1.7em;
                     padding-bottom: 2em;
-                    padding-right: 20em;
+                    padding-right: 16em;
                     font-weight: bold;
                     box-shadow: 3px 3px black;
                     border-radius: 6%;
@@ -765,6 +774,7 @@ main{
             margin-top: 10em;
             .txt-h{
                 grid-area: txt-h;
+                margin-right: 2em;
             }
         
            
@@ -917,16 +927,18 @@ main{
                 margin-top: 3em;
                 
             }
-            .dropdown{
-                padding-top: 1.3em;
-                padding-bottom: 1.3em;
-                padding-right: 24em;
-                font-weight: bold;
-                box-shadow: 3px 3px black;
-                border-radius: 6%;
-                text-decoration: none
-            
-            }
+
+            .drp{
+                .dropdown{
+                    padding-top: 1.3em;
+                    padding-bottom: 1.3em;
+                    padding-right: 24em;
+                    font-weight: bold;
+                    box-shadow: 3px 3px black;
+                    border-radius: 6%;
+                    text-decoration: none
+                }
+             }
             .inputs1{
                 display: flex;
                 align-content: center;
@@ -942,7 +954,7 @@ main{
                     .dropdown{
                         padding-top: 1.3em;
                         padding-bottom: 1.3em;
-                        padding-right: 11em;
+                        padding-right: 6.8em;
                         font-weight: bold;
                         box-shadow: 3px 3px black;
                         border-radius: 6%;

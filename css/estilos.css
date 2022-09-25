@@ -13,7 +13,8 @@ body {
   margin-left: 60px;
   margin-right: 60px;
   background-image: linear-gradient(to bottom, #3AB4F2, #0078AA);
-  color: #F6F6F6; }
+  color: #F6F6F6;
+  font-family: 'Poppins', sans-serif; }
 
 a:link, a:visited, a:active {
   text-decoration: none; }
@@ -153,6 +154,8 @@ main .historia {
   justify-content: center; }
   main .historia .txt-h {
     grid-area: txt-h; }
+    main .historia .txt-h .titleNos {
+      margin-bottom: 1em; }
   main .historia .img-h {
     grid-area: img-h;
     margin-bottom: 4em;
@@ -167,6 +170,8 @@ main .pizzero {
   justify-content: center; }
   main .pizzero .txt-p {
     grid-area: txt-p; }
+    main .pizzero .txt-p .titleNos2 {
+      margin-bottom: 1em; }
   main .pizzero .img-p {
     grid-area: img-p;
     margin-bottom: 6em;
@@ -345,11 +350,11 @@ main div .contacto {
   justify-content: center;
   height: auto;
   margin-bottom: 5em; }
-  main div .contacto .dropdown {
+  main div .contacto .drp .dropdown {
     margin-bottom: 4em;
     padding-top: 1.3em;
     padding-bottom: 1.3em;
-    padding-right: 8em;
+    padding-right: 6.7em;
     font-weight: bold;
     box-shadow: 3px 3px black;
     border-radius: 6%;
@@ -390,7 +395,7 @@ main div .contacto {
 /*MEDIA QUERIES*/
 @media screen and (min-width: 720px) {
   main .section2 {
-    height: 500px; }
+    height: 600px; }
   main .newsletter {
     margin-top: 200px; }
     main .newsletter .txt-news .suscribite {
@@ -478,7 +483,7 @@ main div .contacto {
     main .newsletter .form .mail {
       padding-top: 1.7em;
       padding-bottom: 2em;
-      padding-right: 20em;
+      padding-right: 16em;
       font-weight: bold;
       box-shadow: 3px 3px black;
       border-radius: 6%;
@@ -510,7 +515,8 @@ main div .contacto {
     grid-template-areas: "txt-h img-h";
     margin-top: 10em; }
     main .historia .txt-h {
-      grid-area: txt-h; }
+      grid-area: txt-h;
+      margin-right: 2em; }
     main .historia .img-h {
       grid-area: img-h; }
   main .pizzero {
@@ -601,7 +607,7 @@ main div .contacto {
     display: flex;
     justify-content: center;
     margin-top: 3em; }
-  main .contacto .dropdown {
+  main .contacto .drp .dropdown {
     padding-top: 1.3em;
     padding-bottom: 1.3em;
     padding-right: 24em;
@@ -620,7 +626,7 @@ main div .contacto {
     main .contacto .inputs2 .drp .dropdown {
       padding-top: 1.3em;
       padding-bottom: 1.3em;
-      padding-right: 11em;
+      padding-right: 6.8em;
       font-weight: bold;
       box-shadow: 3px 3px black;
       border-radius: 6%;
