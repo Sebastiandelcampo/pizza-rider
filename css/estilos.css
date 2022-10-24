@@ -271,6 +271,11 @@ main .cumple {
     box-shadow: 10px 10px 20px black; }
 
 /*FROZEN*/
+main .container .row .card {
+  margin-top: 2em; }
+  main .container .row .card .card-body {
+    background-color: #3AB4F2; }
+
 main .video {
   display: flex;
   justify-content: center;
@@ -297,7 +302,7 @@ main .clasicas .txt-pizza {
   margin-bottom: 1em; }
 
 main .clasicas .line-frz {
-  margin-bottom: 5em; }
+  margin-bottom: 2em; }
 
 main .clasicas .gustosC1C2 {
   margin-top: 1em;
@@ -311,10 +316,11 @@ main .clasicas .gustosC3C4 {
     margin-bottom: 2em; }
 
 main .premium .txt-pizza {
+  margin-top: 5em;
   margin-bottom: 1em; }
 
 main .premium .line-frz {
-  margin-bottom: 5em; }
+  margin-bottom: 2em; }
 
 main .premium .gustosP1P2 {
   margin-top: 1em;
@@ -328,10 +334,11 @@ main .premium .gustosP3P4 {
     margin-bottom: 2em; }
 
 main .deluxe .txt-pizza {
+  margin-top: 5em;
   margin-bottom: 1em; }
 
 main .deluxe .line-frz {
-  margin-bottom: 5em; }
+  margin-bottom: 2em; }
 
 main .deluxe .gustosD1D2 {
   margin-top: 1em;
@@ -343,6 +350,10 @@ main .wap {
   position: fixed;
   bottom: 1em;
   right: 0.5em; }
+
+main .combos .txt-pizza .title-combos {
+  margin-top: 5em;
+  margin-bottom: 1em; }
 
 /*CONTACTO*/
 main div .contacto {

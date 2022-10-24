@@ -59,6 +59,13 @@
                       </li>
                     
                     </ul>
+                    <button type="button" class="btn btn-primary position-relative">
+                      Carrito
+                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        0
+                        <span class="visually-hidden">Carrito</span>
+                      </span>
+                    </button>
                   </div>
                 </div>
               </nav>
@@ -83,11 +90,12 @@
         <div class="frozen">
              <div class="txt-frozen">
                 <h2>¡Salen unas pizzas en el horno o la parrilla, condimentos maravilla, Pizza Rider está acá!</h2>
-                <p class="p-f">¡Escribinos por Whatsapp y hacenos tu pedido!</p>
-                <p class="p-f2">Buscalas por nuestro local o cotizá tu envío: entregamos los viernes en Capital Federal y Zona Norte.</p> 
             </div>
              
       </div>
+
+        <!-- CLASICAS -->
+
 
         <div class="clasicas">
             <div class="txt-pizza">
@@ -96,66 +104,38 @@
                 <div>
                     <hr class="line-frz" size="3px" width="30%" color="#F6F6F6">  
                 </div>
-         <div class="container gustosC1C2">
-              <div class="row">
-                 <div class="col-lg-6 gustosC1">
-                     <h3>Muzzarela........................$700</h3>
-                     <p>Queso muzzarela, salsa de tomate y una lluvia de orégano.</p>
-                 </div>
-                 <div class="col-lg-6 gustosC2">
-                     <h3>Fugazzeta........................$700</h3>
-                     <p>Muzzarela, salsa de tomate y un colchón de cebolla.</p>
-                 </div>
+
+         <div class="container">
+              <div class="row" id="c1c2">
               </div>
          </div>
-
-           <div class="container gustosC3C4">
-             <div class="row">
-              <div class="col-lg-6 gustosC3">
-                  <h3>Napolitana.........................$700</h3>
-                  <p>Queso muzzarela, tomate y el infalible ajo picado.</p>
-              </div>
-              <div class="col-lg-6 gustosC4">
-                  <h3>Jamón&Morrón.................$700</h3>
-                  <p>Muzzarela, morrones en tiras y jamón en cuadraditos.</p>
-              </div>
+           <div class="container">
+             <div class="row c3">
              </div>
            </div>
 
         </div>
+
+                <!-- SPECIAL -->
 
         <div class="premium">
-            <div class="txt-pizza">
-                <h2 class="title-premium">Special</h2>
+              <div class="txt-pizza">
+                  <h2 class="title-premium">Special</h2>
+              </div>
+
+              <div>
+                  <hr class="line-frz" size="3px" width="30%" color="#F6F6F6">  
+              </div>
+
+            <div class="container gustos">
+              <div class="row" id="special">
+              </div>
             </div>
-            <div>
-                <hr class="line-frz" size="3px" width="30%" color="#F6F6F6">  
-            </div>
-           <div class="container gustosP1P2">
-             <div class="row">
-              <div class="col-lg-6 gustosP1">
-                  <h3>4 Quesos............................$800</h3>
-                  <p>Queso Muzzarela, Provolone, Roquefort y Parmesano.</p>
-              </div>
-              <div class="col-lg-6 gustosP2">
-                  <h3>Calabresa............................$800</h3>
-                  <p>Queso muzzarela, salsa de tomate y longaniza española. </p>
-              </div>
-             </div>
-           </div>
-           <div class="container gustosP3P4">
-             <div class="row">
-              <div class="col-lg-6 gustosP3">
-                  <h3>Caramela............................$800</h3>
-                  <p>Queso muzzarela, salsa de tomate y cebolla caramelizada.</p>
-              </div>
-              <div class="col-lg-6 gustosP4">
-                  <h3>Provolone............................$800</h3>
-                  <p>Queso provolone, queso muzzarela y salsa de tomate.</p>
-              </div>
-             </div>
-           </div>
         </div>
+
+                <!-- DELUXE -->
+
+
         <div class="deluxe">
             <div class="txt-pizza">
                 <h2 class="title-deluxe">Deluxe</h2>
@@ -163,28 +143,33 @@
             <div>
                 <hr class="line-frz" size="3px" width="30%" color="#F6F6F6">  
             </div>
-            <div class="container gustosD1D2">
-                <div class="row">
-                  <div class="col-lg-6 gustosD1">
-                      <h3>Champis...........................$900</h3>
-                      <p>Queso muzzarela, salsa de tomate y champiñónes.</p>
-                  </div>
-                  <div class="col-lg-6 gustosD2">
-                      <h3>Morada&Roque...................$900</h3>
-                      <p>Queso roquefort, salsa de tomate y cebolla morada.</p>
-                  </div>
+            <div class="container ">
+              <div class="row" id="deluxe">
                 </div>
             </div>
         </div>
-        <div class="wap">
-          <a href="https://api.whatsapp.com/send?phone=5491111111111" target="_blank"><img src="../img/whatsapp.png" alt="ícono de whatsapp"></a>
-        </div>
+
+                <!-- COMBOS -->
+
+
+        <div class="combos">
+          <div class="txt-pizza">
+              <h2 class="title-combos">Combos Rider</h2>
+          </div>
+          <div>
+              <hr class="line-frz" size="3px" width="30%" color="#F6F6F6">  
+          </div>
+          <div class="container combosRider">
+              <div class="row" id="combo1y2">
+          </div>
+      </div>
+
 
     </main>
     <div>
         <hr size="3px" width="100%" color="#F6F6F6">  
     </div>
-  <!--Footer-->
+               <!--Footer-->
     
   <div class="container">
     <footer class="row">
@@ -198,7 +183,10 @@
            </div>
     </footer>
 </div>
+
   <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> 
+<script src="../scripts/script.js"></script>
+<script src="../scripts/script2.js"></script>
 </body>
 </html>
